@@ -42,7 +42,7 @@ while True:
     # Create monochrome version of image
     full_grey = cv2.cvtColor(full_photo, cv2.COLOR_BGR2GRAY)
     # Detect any faces
-    faces = face_detector.detectMultiScale(full_grey, scaleFactor=1.2, minNeighbors=5, minSize=(300,300))
+    faces = face_detector.detectMultiScale(full_grey, scaleFactor=1.2, minNeighbors=5, minSize=(100,100))
     for face in faces:
         # Get coordinates of the face
         x,y,w,h = face
